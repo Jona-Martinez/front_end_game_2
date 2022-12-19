@@ -5,27 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chesito Game</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!--Styles-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+
 </head>
 <body>
-    
+    <!--Header-->
+    <header class="header">
+        <img src="img/logo.png" alt="Logo MasterDots">
+    </header>
+
+    <!--User Form-->
+    <main class="main">
+        <form action="game.html" class="form" id="formEntrada">
+            <div class="item-form">
+                <label for="name" class="label">Enter your name:</label>
+                <input type="text" name="nick" value="@" id="nicka" readonly>
+                <input type="text" name="nick" id="nick">
+            </div>
+            <div class="item-form">
+                <label for="email" class="label">E-mail:</label>
+                <input type="e-mail" name="email" id="email" placeholder="name@gmail.com">
+            </div>
+
+            <div class="item-form">
+                <label for="size" class="label">Game size:</label>
+                <select name="size" id="size">
+                    <option value="0">--Select Size--</option>
+                    <option value="1">4x4</option>
+                    <option value="2">5x5</option>
+                    <option value="3">6x6</option>
+                </select>
+            </div>
+
+            <div class="item-form">
+                <input type="submit" value="Start Game" id="jugar">
+            </div>
+        </form>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+        <p>
+            Front-End Game HTML - CSS - JS
+        </p>
+    </footer>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="js/main.js"></script>
+    <!--JS Code-->
+    <script src="./js/main.js"></script>
 </body>
 </html>
